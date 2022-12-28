@@ -1,0 +1,65 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    background-color: #f7f7f7;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: "secao-video-principal secao-propaganda"
+                         "secao-video-principal secao-videos-sugeridos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    grid-gap: 20px;
+    padding: 35px;
+    margin: auto;
+}
+
+.main .secao-video-principal{
+    grid-area: secao-video-principal;
+}
+
+.main .secao-video-principal .titulo-video h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.main .secao-video-principal .titulo-video .descricao h3{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 7px;
+}
+
+.main .secao-video-principal .titulo-video .descricao p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 9px;
+}
+
+.main .secao-propaganda{
+    grid-area: secao-propaganda;
+}
+
+.main .secao-videos-sugeridos{
+    grid-area: secao-videos-sugeridos;
+}
+
+.main .secao-videos-sugeridos .next-video{
+    display: flex;
+    margin-top: 5px;
+}
+
+.main .secao-videos-sugeridos .next-video .info{
+    margin-left: 5px;
+}
+
+.main .secao-videos-sugeridos .next-video .info h2{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main .secao-videos-sugeridos .next-video .info h3{
+    font-size: 11px;
+    font-weight: 300;
+}
